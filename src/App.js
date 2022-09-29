@@ -66,7 +66,7 @@ function App() {
               return <div className="cryptooo">
                         <img src={element.image.large} width="150"/>
                         <h3>element.id</h3>
-                      </div>
+                     </div>
               }
             )
           }
