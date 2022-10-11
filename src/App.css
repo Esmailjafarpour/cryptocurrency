@@ -7,13 +7,12 @@
 }
 
 .App{
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(8, 151, 144, 0.589);
+  background-color: rgb(33 54 53 / 94%);
+  padding: 20px 0;
 }
 
 .title{
@@ -23,7 +22,7 @@
   color: #dee7e4;
   padding: 10px;
   box-shadow: 1px 1px 10px #219997;
-  width: 99vw;
+  width: 98%;
   text-align: center;
 }
 
@@ -50,7 +49,7 @@ input{
 }
 
 button{
-  width: 10vw;
+  width: 40%;
   padding: 8px;
   border: 2px solid #dee7e4;
   border-radius: 6px;
@@ -75,7 +74,7 @@ button:active{
 }
 
 .container{
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,9 +117,15 @@ button:active{
 }
 
 .des{
-  flex: 4;
+  flex: 4 1;
   text-align: justify;
   line-height: 1.4rem;
+  height: 331px;
+  overflow-y: auto;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  color: white;
 }
 
 i{
@@ -132,10 +137,118 @@ i{
 
 
 .content{
-  width: 99vw;
-  height: 100vh;
+  width: 98%;
   border: 2px solid #208786;
   border-radius: 8px;
   background-color: #2aa5a5;
 
+}
+
+.crypto{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: 2px solid #ccc;
+  margin: 10px 20px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+}
+
+.crypto img{
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.crypto h3{
+  color: aliceblue;
+}
+
+@media (max-width : 768px) {
+
+  .search {
+    width: 70%;
+  }
+
+  .btn{
+    width: 30%;
+  }
+
+  .crypto {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  button {
+    width: 38%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .crypto img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+  }
+  
+}
+
+@media (max-width : 768px) {
+  .container{
+    display: block;
+  }
+
+  .btn{
+    width: 20%;
+  }
+
+  .crypto-info {
+    width: 95%;
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: #21807e;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    flex: 2 1;
+  }
+
+  .des{
+    width: 95%;
+    margin-top: 20px;
+  }
+  
+}
+
+@media (min-width : 768px) and (max-width : 1200px) {
+  .btn{
+    width: 20%;
+  }
+
+  .crypto-info {
+    width: 95%;
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: #21807e;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    flex: 2 1;
+  }
+
+  .des{
+    width: 95%;
+    margin-top: 20px;
+  }
+  
 }
